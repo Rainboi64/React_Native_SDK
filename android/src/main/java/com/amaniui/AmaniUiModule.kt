@@ -71,7 +71,7 @@ class AmaniUiModule(reactContext: ReactApplicationContext) :
     }
 
     AmaniSDKUI.init(
-      activity = activity,
+      applicationContext = activity,
       serverURL = args.getString("server")!!,
       amaniVersion = amaniVersion
     )
@@ -138,7 +138,7 @@ class AmaniUiModule(reactContext: ReactApplicationContext) :
 
                 resultMap.putBoolean(
                   "isTokenExpired",
-                  kycResult.httpErrorCode == 403
+                  kycResult.errorCode == 403
                 )
 
                 callback(resultMap)
@@ -174,7 +174,7 @@ class AmaniUiModule(reactContext: ReactApplicationContext) :
 
               resultMap.putBoolean(
                 "isTokenExpired",
-                kycResult.httpErrorCode == 403
+                kycResult.errorCode == 403
               )
             }
           } catch (_: Exception) {}
