@@ -2,6 +2,7 @@
   "name": "amani-react-native-sdk",
   "version": "0.1.0",
   "description": "test",
+  "private": true,
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
