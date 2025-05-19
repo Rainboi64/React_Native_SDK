@@ -4,6 +4,7 @@
   "description": "AmaniUI bindings for Amani eKYC platform. ",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
+  "private": true,
   "types": "lib/typescript/src/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
